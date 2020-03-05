@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/Icons/x.png">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body onload="makeNotes()">
+    <header class="text-center" id="myHeader">
+        <h1 id="myH1">To - Do List</h1>
+    </header>
+    <div id="inputBox" class="text-left">
+        <label>Task: </label>
+        <input type="text" id="taskBox" size="100">
+        <br>
+        <label>date:</label>
+        <input type="date" id="dateBox">
+        <label>Time:</label>
+        <input type="time" id="timeBox">
+        <br>
+        <div id="taskBtn" class="text-right">
+            <button onclick="addNote()" class="btn btn-info" >Add</button>
+            <button onclick="cleartask()" class="btn btn-info">Clear</button>
+        </div>
+    </div>
+    <div id="container">
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

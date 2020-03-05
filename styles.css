@@ -1,0 +1,93 @@
+@font-face {  
+    font-family: "GooEaster";
+    src: url(assets/Fonts/goo-easter/Goo\ Easter.otf);
+  } 
+
+body {
+    background-image: url("assets/images/ideaBackground.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    margin-top: 5px;
+    text-shadow: 2px 2px white;
+}
+h1 {
+    font-family: GooEaster;
+    font-size: 60px;
+}
+
+#inputBox {
+    background-image: url("assets/images/ideaBackground.jpg");
+    margin: auto;
+    width: 600px;
+    height: 130px;
+    padding: 25px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+label{
+    color: white;
+    text-shadow: 1px 1px 1px  black;
+}
+input {
+    font-size: x-small;
+}
+#taskBtn > button {
+    margin-bottom: 10px;
+    height: 30px;
+
+}
+
+span {
+    font-size: small;
+}
+
+#container {
+    margin: auto;
+    padding: 0px 15px;
+}
+#note {
+    background-image: url("assets/images/notebg.png");
+    background-size: cover;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: 5px 22px;
+    float: left;
+    height: 250px;
+    width: 180px;
+    
+}
+textarea {
+    background: transparent;
+    border: none;
+    margin-top: -10px;
+    height: 160px;
+    width: 95%;
+    resize: none;
+    font-size: smaller;
+    outline: none;   
+ }
+
+ .close {
+    visibility: hidden;
+    position: relative;
+    top: -3px;
+    right: 10px;
+}
+#note:hover > button {
+    visibility: visible;
+}
+
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
